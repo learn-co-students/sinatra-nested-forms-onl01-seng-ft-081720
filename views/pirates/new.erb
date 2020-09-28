@@ -1,1 +1,39 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pirates Ahoy!</title>
+  </head>
+  <body>
+    <form method="post" action="/pirates">
+      <label for="name">Pirate Name:</label>
+      <input type="text" name="pirate[name]" id="name">
+      <br>
+      <label for="name">Pirate Weight:</label>
+      <input type="text" name="pirate[weight]" id="weight">
+      <br>
+      <label for="name">Pirate Height:</label>
+      <input type="text" name="pirate[height]" id="height">
+      <br>
+      <label for="name">First Ship's Name:</label>
+      <input type="text" name="pirate[ships][][name]" id="ship_name_1">
+      <br>
+      <label for="name">First Ship's Type:</label>
+      <input type="text" name="pirate[ships][][type]" id="ship_type_1">
+      <br>
+      <label for="name">First Ship's Booty:</label>
+      <input type="text" name="pirate[ships][][booty]" id="ship_booty_1">
+      <br>
+      <label for="name">Second Ship's Name:</label>
+      <input type="text" name="pirate[ships][][name]" id="ship_name_2">
+      <br>
+      <label for="name">Second Ship's Type:</label>
+      <input type="text" name="pirate[ships][][type]" id="ship_type_2">
+      <br>
+      <label for="name">Second Ship's Booty:</label>
+      <input type="text" name="pirate[ships][][booty]" id="ship_booty_2">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
