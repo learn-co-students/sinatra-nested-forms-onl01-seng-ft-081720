@@ -1,7 +1,30 @@
-<h1>Display your Pirate here</h1>
+<h1>Your Pirate!</h1>
+    <div class="pirate">
+        <h3>Name: <%= @pirate.name %></h3>
+        <h4>Weight: <%= @pirate.weight %> lbs</h4>
+        <h5>Height: <%= @pirate.height %> inches</h5>
+        </div><br>
+
+<h2>Your Pirates First Ship!</h2>
+    
+    <% @ships.each.with_index do |ship, idx|%>
+        <div class="ship">
+        <% if idx == 0 %>
+            <p>Name: <%= ship.name %></p>
+            <p>Type: <%= ship.type %></p>
+            <p>Booty: <%= ship.booty %></p>
+        <% end %>
+    <% end %>
+    </div><br>
 
 
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<h2>Your Pirates Second Ship!</h2>
+    <% @ships.each.with_index do |ship, idx| %>
+        <div class="ship">
+        <% if idx == 1 %>
+            <p>Name: <%= ship.name %></p>
+            <p>Type: <%= ship.type %></p>
+            <p>Booty: <%= ship.booty %></p>
+        <% end %>
+    <% end %>
+    </div><br>
